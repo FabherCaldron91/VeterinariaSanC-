@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaController",
+    "Method": "ListarPersonas",
+    "RelativePath": "api/Persona",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaController",
+    "Method": "CrearPersona",
+    "RelativePath": "api/Persona/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "persona",
+        "Type": "VeterinariaSan.Models.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaController",
+    "Method": "ListarPersonasBiID",
+    "RelativePath": "api/Persona/Listar/{DocPersona}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocPersona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

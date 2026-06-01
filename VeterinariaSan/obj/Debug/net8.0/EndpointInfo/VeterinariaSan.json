@@ -1,0 +1,359 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "VeterinariaSan",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Persona": {
+      "get": {
+        "tags": [
+          "Persona"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Persona/Listar/{DocPersona}": {
+      "get": {
+        "tags": [
+          "Persona"
+        ],
+        "parameters": [
+          {
+            "name": "DocPersona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Persona/Crear": {
+      "post": {
+        "tags": [
+          "Persona"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Persona"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Persona"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Persona"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cita": {
+        "type": "object",
+        "properties": {
+          "idCita": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "mascota": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "veterinario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detalleHistoriaClinicas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleHistoriaClinica"
+            },
+            "nullable": true
+          },
+          "mascotaNavigation": {
+            "$ref": "#/components/schemas/Mascota"
+          },
+          "veterinarioNavigation": {
+            "$ref": "#/components/schemas/Persona"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetalleHistoriaClinica": {
+        "type": "object",
+        "properties": {
+          "idDetalle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diagnostico": {
+            "type": "string",
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "string",
+            "nullable": true
+          },
+          "historiaClinica": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "veterinario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cita": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "citaNavigation": {
+            "$ref": "#/components/schemas/Cita"
+          },
+          "historiaClinicaNavigation": {
+            "$ref": "#/components/schemas/HistoriaClinica"
+          },
+          "veterinarioNavigation": {
+            "$ref": "#/components/schemas/Persona"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoriaClinica": {
+        "type": "object",
+        "properties": {
+          "idHistoriaClinica": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mascota": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detalleHistoriaClinicas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleHistoriaClinica"
+            },
+            "nullable": true
+          },
+          "mascotaNavigation": {
+            "$ref": "#/components/schemas/Mascota"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Mascota": {
+        "type": "object",
+        "properties": {
+          "idMascota": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreMascota": {
+            "type": "string",
+            "nullable": true
+          },
+          "especie": {
+            "type": "string",
+            "nullable": true
+          },
+          "raza": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dueño": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cita": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cita"
+            },
+            "nullable": true
+          },
+          "dueñoNavigation": {
+            "$ref": "#/components/schemas/Persona"
+          },
+          "historiaClinicas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoriaClinica"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Persona": {
+        "type": "object",
+        "properties": {
+          "docPersona": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoDoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "cita": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cita"
+            },
+            "nullable": true
+          },
+          "detalleHistoriaClinicas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleHistoriaClinica"
+            },
+            "nullable": true
+          },
+          "mascota": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mascota"
+            },
+            "nullable": true
+          },
+          "personaRols": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonaRol"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonaRol": {
+        "type": "object",
+        "properties": {
+          "idPersonaRol": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personaDocPersona": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "rolIdRol": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "personaDocPersonaNavigation": {
+            "$ref": "#/components/schemas/Persona"
+          },
+          "rolIdRolNavigation": {
+            "$ref": "#/components/schemas/Rol"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Rol": {
+        "type": "object",
+        "properties": {
+          "idRol": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreRol": {
+            "type": "string",
+            "nullable": true
+          },
+          "personaRols": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonaRol"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
