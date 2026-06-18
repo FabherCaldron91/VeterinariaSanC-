@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\controllers\\personarolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\controllers\\personarolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\data\\veterinariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\data\\veterinariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\dto\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\dto\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\models\\detallehistoriaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\models\\detallehistoriaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\dto\\veterinariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\dto\\veterinariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\models\\historiaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\models\\historiaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\models\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\models\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,100 +46,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\PersonaController.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\PersonaController.cs",
-              "RelativeToolTip": "VeterinariaSan\\Controllers\\PersonaController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowCQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\Administrador.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\Administrador.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\Administrador.cs",
+              "RelativeToolTip": "VeterinariaSan\\Dto\\Administrador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:33:51.974Z",
+              "WhenOpened": "2026-06-16T16:10:11.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VeterinarioDto.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\VeterinarioDto.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\VeterinarioDto.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\VeterinarioDto.cs",
+              "RelativeToolTip": "VeterinariaSan\\Dto\\VeterinarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:09:40.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HistoriaClinica.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\HistoriaClinica.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Models\\HistoriaClinica.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\HistoriaClinica.cs",
-              "RelativeToolTip": "VeterinariaSan\\Models\\HistoriaClinica.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAIA2wA0AAAAaAAAAAAAAAA==",
+              "Title": "ClienteDto.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\ClienteDto.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\ClienteDto.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\ClienteDto.cs",
+              "RelativeToolTip": "VeterinariaSan\\Dto\\ClienteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:36:29.223Z"
+              "WhenOpened": "2026-06-16T16:06:53.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Persona.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Models\\Persona.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Persona.cs",
-              "RelativeToolTip": "VeterinariaSan\\Models\\Persona.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAWwBsAAABQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PersonaRolController.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\PersonaRolController.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Controllers\\PersonaRolController.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\PersonaRolController.cs",
+              "RelativeToolTip": "VeterinariaSan\\Controllers\\PersonaRolController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:36:05.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Program.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Program.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Program.cs",
-              "RelativeToolTip": "VeterinariaSan\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:34:17.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Mascota.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Mascota.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Models\\Mascota.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Mascota.cs",
-              "RelativeToolTip": "VeterinariaSan\\Models\\Mascota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:30:23.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DetalleHistoriaClinica.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\DetalleHistoriaClinica.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Models\\DetalleHistoriaClinica.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\DetalleHistoriaClinica.cs",
-              "RelativeToolTip": "VeterinariaSan\\Models\\DetalleHistoriaClinica.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAIA7wBUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:26:27.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cita.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Cita.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Models\\Cita.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Models\\Cita.cs",
-              "RelativeToolTip": "VeterinariaSan\\Models\\Cita.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:26:26.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VeterinariaContext.cs",
-              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Data\\VeterinariaContext.cs",
-              "RelativeDocumentMoniker": "VeterinariaSan\\Data\\VeterinariaContext.cs",
-              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Data\\VeterinariaContext.cs",
-              "RelativeToolTip": "VeterinariaSan\\Data\\VeterinariaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:25:51.2Z",
+              "WhenOpened": "2026-06-11T17:39:40.033Z",
               "EditorCaption": ""
             }
           ]

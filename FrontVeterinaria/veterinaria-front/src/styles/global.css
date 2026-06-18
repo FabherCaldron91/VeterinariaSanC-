@@ -1,0 +1,17 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+button{
+    color: blue;
+    display: flexbox;
+    outline: palevioletred;
+}

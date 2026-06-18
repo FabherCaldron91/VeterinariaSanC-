@@ -122,6 +122,7 @@ C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\Vet
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\VeterinariaSan.csproj.CoreCompileInputs.cache
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\VeterinariaSan.MvcApplicationPartsAssemblyInfo.cs
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\VeterinariaSan.MvcApplicationPartsAssemblyInfo.cache
+C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\VeterinariaSan.sourcelink.json
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Politecnico\SemestreCuatro\Ciclo8\LenguajeProgramacionNube\VeterinariaSan\VeterinariaSan\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

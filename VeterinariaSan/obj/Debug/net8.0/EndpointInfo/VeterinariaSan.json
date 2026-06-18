@@ -5,6 +5,509 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Cita": {
+      "get": {
+        "tags": [
+          "Cita"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/Mascota/{nombreMascota}": {
+      "get": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "name": "nombreMascota",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/{IdCita}": {
+      "get": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "name": "IdCita",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/Crear": {
+      "post": {
+        "tags": [
+          "Cita"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/Actualizar/{IdCita}": {
+      "put": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "name": "IdCita",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/Eliminar/{IdCita}": {
+      "delete": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "name": "IdCita",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DetalleHistoriaClinica": {
+      "get": {
+        "tags": [
+          "DetalleHistoriaClinica"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DetalleHistoriaClinica/{IdDetalle}": {
+      "get": {
+        "tags": [
+          "DetalleHistoriaClinica"
+        ],
+        "parameters": [
+          {
+            "name": "IdDetalle",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DetalleHistoriaClinica/Crear": {
+      "post": {
+        "tags": [
+          "DetalleHistoriaClinica"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DetalleHistoriaClinica/Actualizar/{IdDetalle}": {
+      "put": {
+        "tags": [
+          "DetalleHistoriaClinica"
+        ],
+        "parameters": [
+          {
+            "name": "IdDetalle",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleHistoriaClinicaUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DetalleHistoriaClinica/Eliminar/{IdDetalle}": {
+      "delete": {
+        "tags": [
+          "DetalleHistoriaClinica"
+        ],
+        "parameters": [
+          {
+            "name": "IdDetalle",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HistoriaClinica": {
+      "get": {
+        "tags": [
+          "HistoriaClinica"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HistoriaClinica/{IdHistoriaClinica}": {
+      "get": {
+        "tags": [
+          "HistoriaClinica"
+        ],
+        "parameters": [
+          {
+            "name": "IdHistoriaClinica",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HistoriaClinica/Crear": {
+      "post": {
+        "tags": [
+          "HistoriaClinica"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HistoriaClinicaCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HistoriaClinicaCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HistoriaClinicaCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HistoriaClinica/Eliminar/{IdHistoriaClinica}": {
+      "delete": {
+        "tags": [
+          "HistoriaClinica"
+        ],
+        "parameters": [
+          {
+            "name": "IdHistoriaClinica",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota": {
+      "get": {
+        "tags": [
+          "Mascota"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota/Listar/{nombreMascota}": {
+      "get": {
+        "tags": [
+          "Mascota"
+        ],
+        "parameters": [
+          {
+            "name": "nombreMascota",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota/Crear": {
+      "post": {
+        "tags": [
+          "Mascota"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota/Actualizar/{IdMascota}": {
+      "put": {
+        "tags": [
+          "Mascota"
+        ],
+        "parameters": [
+          {
+            "name": "IdMascota",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MascotaUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota/Eliminar/{IdMascota}": {
+      "delete": {
+        "tags": [
+          "Mascota"
+        ],
+        "parameters": [
+          {
+            "name": "IdMascota",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Persona": {
       "get": {
         "tags": [
@@ -49,17 +552,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Persona"
+                "$ref": "#/components/schemas/PersonaCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Persona"
+                "$ref": "#/components/schemas/PersonaCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Persona"
+                "$ref": "#/components/schemas/PersonaCreateDto"
               }
             }
           }
@@ -70,21 +573,314 @@
           }
         }
       }
+    },
+    "/api/Persona/Actualizar/{DocPersona}": {
+      "put": {
+        "tags": [
+          "Persona"
+        ],
+        "parameters": [
+          {
+            "name": "DocPersona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Persona/Eliminar/{DocPersona}": {
+      "delete": {
+        "tags": [
+          "Persona"
+        ],
+        "parameters": [
+          {
+            "name": "DocPersona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol": {
+      "get": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Clientes": {
+      "get": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Veterinarios": {
+      "get": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Administradores": {
+      "get": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Crear": {
+      "post": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaRolCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaRolCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonaRolCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Eliminar/{IdPersonaRol}": {
+      "delete": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "parameters": [
+          {
+            "name": "IdPersonaRol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rol": {
+      "get": {
+        "tags": [
+          "Rol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rol/{IdRol}": {
+      "get": {
+        "tags": [
+          "Rol"
+        ],
+        "parameters": [
+          {
+            "name": "IdRol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rol/Crear": {
+      "post": {
+        "tags": [
+          "Rol"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rol/Actualizar/{IdRol}": {
+      "put": {
+        "tags": [
+          "Rol"
+        ],
+        "parameters": [
+          {
+            "name": "IdRol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rol/Eliminar/{IdRol}": {
+      "delete": {
+        "tags": [
+          "Rol"
+        ],
+        "parameters": [
+          {
+            "name": "IdRol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "Cita": {
+      "CitaCreateDto": {
         "type": "object",
         "properties": {
-          "idCita": {
-            "type": "integer",
-            "format": "int32"
-          },
           "fechaHora": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "motivo": {
             "type": "string",
@@ -96,41 +892,47 @@
           },
           "mascota": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "veterinario": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "detalleHistoriaClinicas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DetalleHistoriaClinica"
-            },
-            "nullable": true
-          },
-          "mascotaNavigation": {
-            "$ref": "#/components/schemas/Mascota"
-          },
-          "veterinarioNavigation": {
-            "$ref": "#/components/schemas/Persona"
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "DetalleHistoriaClinica": {
+      "CitaUpdateDto": {
         "type": "object",
         "properties": {
-          "idDetalle": {
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "mascota": {
             "type": "integer",
             "format": "int32"
           },
+          "veterinario": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetalleHistoriaClinicaCreateDto": {
+        "type": "object",
+        "properties": {
           "fecha": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "diagnostico": {
             "type": "string",
@@ -142,63 +944,50 @@
           },
           "historiaClinica": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "veterinario": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "cita": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "citaNavigation": {
-            "$ref": "#/components/schemas/Cita"
-          },
-          "historiaClinicaNavigation": {
-            "$ref": "#/components/schemas/HistoriaClinica"
-          },
-          "veterinarioNavigation": {
-            "$ref": "#/components/schemas/Persona"
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "HistoriaClinica": {
+      "DetalleHistoriaClinicaUpdateDto": {
         "type": "object",
         "properties": {
-          "idHistoriaClinica": {
-            "type": "integer",
-            "format": "int32"
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
           },
+          "diagnostico": {
+            "type": "string",
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoriaClinicaCreateDto": {
+        "type": "object",
+        "properties": {
           "mascota": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "detalleHistoriaClinicas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DetalleHistoriaClinica"
-            },
-            "nullable": true
-          },
-          "mascotaNavigation": {
-            "$ref": "#/components/schemas/Mascota"
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "Mascota": {
+      "MascotaCreateDto": {
         "type": "object",
         "properties": {
-          "idMascota": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nombreMascota": {
             "type": "string",
             "nullable": true
@@ -213,35 +1002,38 @@
           },
           "fechaNacimiento": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "dueño": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "cita": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Cita"
-            },
-            "nullable": true
-          },
-          "dueñoNavigation": {
-            "$ref": "#/components/schemas/Persona"
-          },
-          "historiaClinicas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoriaClinica"
-            },
-            "nullable": true
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "Persona": {
+      "MascotaUpdateDto": {
+        "type": "object",
+        "properties": {
+          "nombreMascota": {
+            "type": "string",
+            "nullable": true
+          },
+          "especie": {
+            "type": "string",
+            "nullable": true
+          },
+          "raza": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonaCreateDto": {
         "type": "object",
         "properties": {
           "docPersona": {
@@ -275,80 +1067,63 @@
           "password": {
             "type": "string",
             "nullable": true
-          },
-          "cita": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Cita"
-            },
-            "nullable": true
-          },
-          "detalleHistoriaClinicas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DetalleHistoriaClinica"
-            },
-            "nullable": true
-          },
-          "mascota": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Mascota"
-            },
-            "nullable": true
-          },
-          "personaRols": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PersonaRol"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "PersonaRol": {
+      "PersonaRolCreateDto": {
         "type": "object",
         "properties": {
-          "idPersonaRol": {
-            "type": "integer",
-            "format": "int32"
-          },
           "personaDocPersona": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "rolIdRol": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "personaDocPersonaNavigation": {
-            "$ref": "#/components/schemas/Persona"
-          },
-          "rolIdRolNavigation": {
-            "$ref": "#/components/schemas/Rol"
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "Rol": {
+      "PersonaUpdateDto": {
         "type": "object",
         "properties": {
-          "idRol": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombreRol": {
+          "tipoDoc": {
             "type": "string",
             "nullable": true
           },
-          "personaRols": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PersonaRol"
-            },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolCreateDto": {
+        "type": "object",
+        "properties": {
+          "nombreRol": {
+            "type": "string",
             "nullable": true
           }
         },

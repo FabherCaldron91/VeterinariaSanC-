@@ -1,5 +1,316 @@
 [
   {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "ListarCitas",
+    "RelativePath": "api/Cita",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Cita/{IdCita}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdCita",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "ActualizarCita",
+    "RelativePath": "api/Cita/Actualizar/{IdCita}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdCita",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.CitaUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "CrearCita",
+    "RelativePath": "api/Cita/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.CitaCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "EliminarCita",
+    "RelativePath": "api/Cita/Eliminar/{IdCita}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdCita",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.CitaController",
+    "Method": "BuscarPorMascota",
+    "RelativePath": "api/Cita/Mascota/{nombreMascota}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreMascota",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.DetalleHistoriaClinicaController",
+    "Method": "Listar",
+    "RelativePath": "api/DetalleHistoriaClinica",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.DetalleHistoriaClinicaController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/DetalleHistoriaClinica/{IdDetalle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDetalle",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.DetalleHistoriaClinicaController",
+    "Method": "Actualizar",
+    "RelativePath": "api/DetalleHistoriaClinica/Actualizar/{IdDetalle}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDetalle",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.DetalleHistoriaClinicaUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.DetalleHistoriaClinicaController",
+    "Method": "Crear",
+    "RelativePath": "api/DetalleHistoriaClinica/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.DetalleHistoriaClinicaCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.DetalleHistoriaClinicaController",
+    "Method": "Eliminar",
+    "RelativePath": "api/DetalleHistoriaClinica/Eliminar/{IdDetalle}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDetalle",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.HistoriaClinicaController",
+    "Method": "ListarHistorias",
+    "RelativePath": "api/HistoriaClinica",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.HistoriaClinicaController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/HistoriaClinica/{IdHistoriaClinica}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHistoriaClinica",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.HistoriaClinicaController",
+    "Method": "CrearHistoria",
+    "RelativePath": "api/HistoriaClinica/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.HistoriaClinicaCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.HistoriaClinicaController",
+    "Method": "EliminarHistoria",
+    "RelativePath": "api/HistoriaClinica/Eliminar/{IdHistoriaClinica}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHistoriaClinica",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "ListarMascota",
+    "RelativePath": "api/Mascota",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "ActualizarMascota",
+    "RelativePath": "api/Mascota/Actualizar/{IdMascota}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdMascota",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.MascotaUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "CrearMascota",
+    "RelativePath": "api/Mascota/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.MascotaCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "EliminarMascota",
+    "RelativePath": "api/Mascota/Eliminar/{IdMascota}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdMascota",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "BuscarMascota",
+    "RelativePath": "api/Mascota/Listar/{nombreMascota}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreMascota",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VeterinariaSan.Controllers.PersonaController",
     "Method": "ListarPersonas",
     "RelativePath": "api/Persona",
@@ -11,15 +322,20 @@
   },
   {
     "ContainingType": "VeterinariaSan.Controllers.PersonaController",
-    "Method": "CrearPersona",
-    "RelativePath": "api/Persona/Crear",
-    "HttpMethod": "POST",
+    "Method": "ActualizarPersona",
+    "RelativePath": "api/Persona/Actualizar/{DocPersona}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "persona",
-        "Type": "VeterinariaSan.Models.Persona",
+        "Name": "DocPersona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.PersonaUpdateDto",
         "IsRequired": true
       }
     ],
@@ -27,7 +343,39 @@
   },
   {
     "ContainingType": "VeterinariaSan.Controllers.PersonaController",
-    "Method": "ListarPersonasBiID",
+    "Method": "CrearPersona",
+    "RelativePath": "api/Persona/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.PersonaCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/Persona/Eliminar/{DocPersona}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocPersona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaController",
+    "Method": "ListarPersonaPorId",
     "RelativePath": "api/Persona/Listar/{DocPersona}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -35,6 +383,157 @@
     "Parameters": [
       {
         "Name": "DocPersona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "ListarPersonaRoles",
+    "RelativePath": "api/PersonaRol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "ObtenerAdministradores",
+    "RelativePath": "api/PersonaRol/Administradores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "ObtenerClientes",
+    "RelativePath": "api/PersonaRol/Clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "CrearPersonaRol",
+    "RelativePath": "api/PersonaRol/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.PersonaRolCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "EliminarPersonaRol",
+    "RelativePath": "api/PersonaRol/Eliminar/{IdPersonaRol}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdPersonaRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "ObtenerVeterinarios",
+    "RelativePath": "api/PersonaRol/Veterinarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.RolController",
+    "Method": "ListarRoles",
+    "RelativePath": "api/Rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.RolController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Rol/{IdRol}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.RolController",
+    "Method": "ActualizarRol",
+    "RelativePath": "api/Rol/Actualizar/{IdRol}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.RolCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.RolController",
+    "Method": "CrearRol",
+    "RelativePath": "api/Rol/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VeterinariaSan.Dto.RolCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.RolController",
+    "Method": "EliminarRol",
+    "RelativePath": "api/Rol/Eliminar/{IdRol}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdRol",
         "Type": "System.Int32",
         "IsRequired": true
       }
