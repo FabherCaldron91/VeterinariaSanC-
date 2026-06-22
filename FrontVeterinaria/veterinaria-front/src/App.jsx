@@ -8,10 +8,13 @@ import CitasDos from './pages/CitasDos';
 import CrearPersona from "./pages/CrearPersona";
 import PersonaRoles from "./pages/PersonaRoles";
 import Personasdos from './pages/Personasdos';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
 return (
     <BrowserRouter>
+        <Navbar />
     <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/personas' element={<Personas />} />
@@ -22,6 +25,7 @@ return (
         <Route path="/personas/crear" element={<CrearPersona />} />
         <Route path="/personas/:docPersona/roles"element={<PersonaRoles />} />
     </Routes>
+        <Footer />
     </BrowserRouter>
 )
 }

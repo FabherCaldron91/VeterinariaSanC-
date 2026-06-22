@@ -6,7 +6,6 @@ import {
     eliminarMascota
 } from "../services/mascotaServices";
 import { obtenerPersonas} from "../services/personaService";
-import Navbar from "../components/Navbar";
 import { obtenerCliente} from "../services/personaRolService"
 
 function Mascota() {
@@ -30,7 +29,7 @@ function Mascota() {
     const cargarPersona = async () => {
         try {
             const response = await obtenerCliente();
-            setPersonas(response.data);
+            setClientes(response.data);
         }
         catch (error) {
             console.log(error);
@@ -50,6 +49,7 @@ function Mascota() {
 
     const limpiarFormulario = () => {
         setIdMascota(null);
+        setNombreMascota("");
         setEspecie("");
         setRaza("");
         setFechaNacimiento("");
@@ -105,6 +105,7 @@ function Mascota() {
     };
 
     const editarMascota = (mascota) => {
+        
         setIdMascota(
             mascota.idMascota
         );
@@ -122,7 +123,7 @@ function Mascota() {
         );
 
         setFechaNacimiento(
-        mascota.fechaNacimiento
+        mascota.fechaNacimiento?.split("T")[0]
         );
 
         setDueno(
@@ -149,9 +150,7 @@ function Mascota() {
 
     return (
         <>
-        <Navbar />
             <h1>Gestion de mascota.</h1>
-
             <form
             className="form-mascota"
             onSubmit={guardarMascota}>
@@ -164,7 +163,6 @@ function Mascota() {
                         e.target.value
                     )
                 }/>
-
                 <input 
                 type="text" 
                 placeholder="Especie"
@@ -175,7 +173,6 @@ function Mascota() {
                     )
                 }
                 />
-
                 <input 
                 type="text"
                 placeholder="Raza"
@@ -195,8 +192,8 @@ function Mascota() {
                     )
                 }
                 />
-
                 <select
+                className="form-select mb-2"
                 value={dueno}
                 onChange={(e) =>
                     setDueno(
@@ -213,12 +210,11 @@ function Mascota() {
                         key={cliente.docPersona}
                         value={cliente.docPersona}
                         >
-                            {cliente.nombres}
+                            {cliente.nombre}
                         </option>
                     ))
                     }
                 </select>
-
                 <button type="submit">
                     {
                         editado
@@ -226,7 +222,6 @@ function Mascota() {
                         : "Guardar"
                     }
                 </button>
-
                 {
                     editado && 
                     (
@@ -243,18 +238,21 @@ function Mascota() {
             </form>
             
             <hr></hr>
-
-            <table border="1">
-                <thead>
+            <table
+            className="table table-striped table-hover"
+            >
+                <thead
+                className="table-dark"
+                >
                     <tr>
                         <th>Nombre </th>
                         <th>Especie </th>
                         <th>Raza </th>
                         <th>Fecha de nacimiento </th>
                         <th>Dueño </th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     {mascotas.map((mascota) => (
                         <tr key={mascota.idMascota}>
@@ -262,11 +260,14 @@ function Mascota() {
                             <td>{mascota.especie}</td>
                             <td>{mascota.raza}</td>
                             <td>{mascota.fechaNacimiento?.split("T")[0]}</td>
-                    {personas.map((persona) => (
-                        <td>{persona.nombres}</td>
-                    ))}
+                            <td>
+                                {clientes.find(
+                                    c => c.docPersona === mascota.dueño
+                                )?.nombre}
+                            </td>
                                 <td>
                                     <button
+                                    className="btn btn-outline-success btn-sm me-2"
                                     onClick={() =>
                                         editarMascota(
                                             mascota
@@ -275,8 +276,8 @@ function Mascota() {
                                     >
                                     Editar
                                     </button>
-
                                     <button
+                                    className="btn btn-outline-danger btn-sm"
                                     onClick={() =>
                                         borrarMascota(
                                             mascota.idMascota

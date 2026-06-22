@@ -110,154 +110,244 @@ const limpiar = () => {
     setEditando(false);
 };
 
-return (
-    <div className="container mt-4">
-        <h1>Gestión Personas</h1>
+return ( <div className="container mt-4">
 
-        <button 
-            btn btn-secondary mb-3
-            onClick={() =>
-                navigate("/personas/crear")
-            }
-        >
-            Nueva Persona
-        </button>
-        <div className="card mb-4" >
+    <h1 className="mb-3">
+        Gestión Personas
+    </h1>
+
+    <button
+        className="btn btn-secondary mb-3"
+        onClick={() =>
+            navigate("/personas/crear")
+        }
+    >
+        Nueva Persona
+    </button>
+
+    <div className="card mb-4">
         <div className="card-body">
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Documento</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Usuario</th>
-                    <th>Roles</th>
-                    <th>Acciones </th>
-                </tr>
-            </thead>
 
-            <tbody>
-                {
-                    personas.map((persona) => (
-                        <tr key={persona.docPersona}>
+            <table className="table table-striped table-hover">
 
-                            <td>{persona.docPersona}</td>
-                            <td>{persona.nombres}</td>
-                            <td>{persona.apellidos}</td>
-                            <td>{persona.usuario}</td>
-                            <td>
-                                <button
-                                type="button"
-                                className="btn btn-outline-dark"
-                                onClick={() =>
-                                    navigate(`/personas/${persona.docPersona}/roles`
-                                    )
-                                    }
-                                >
-                                    Roles
-                                </button>
-                            </td>
-                            <td>{persona.rol}</td>
+                <thead className="table-dark">
 
-                            <td>
-                                
-                                <button
-                                    type="button"
-                                    className="btn btn-outline-success"
-                                    onClick={() =>
-                                        editarPersona(persona)
-                                    }
-                                >
-                                    Editar
-                                </button>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Usuario</th>
+                        <th>Roles</th>
+                        <th>Acciones</th>
+                    </tr>
 
-                                <button 
-                                    type="button"
-                                    class="btn btn-outline-danger"
-                                    onClick={() =>
-                                        eliminar(persona.docPersona)
-                                    }
-                                >
-                                    Eliminar
-                                </button>
+                </thead>
 
-                            </td>
+                <tbody>
 
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </table>
+                    {
+                        personas.map((persona) => (
+
+                            <tr key={persona.docPersona}>
+
+                                <td>
+                                    {persona.docPersona}
+                                </td>
+
+                                <td>
+                                    {persona.nombres}
+                                </td>
+
+                                <td>
+                                    {persona.apellidos}
+                                </td>
+
+                                <td>
+                                    {persona.usuario}
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-dark btn-sm"
+                                        onClick={() =>
+                                            navigate(
+                                                `/personas/${persona.docPersona}/roles`
+                                            )
+                                        }
+                                    >
+                                        Roles
+                                    </button>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-success btn-sm me-2"
+                                        onClick={() =>
+                                            editarPersona(persona)
+                                        }
+                                    >
+                                        Editar
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-danger btn-sm"
+                                        onClick={() =>
+                                            eliminar(
+                                                persona.docPersona
+                                            )
+                                        }
+                                    >
+                                        Eliminar
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        ))
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
     </div>
-</div>
-        {
-            editando && (
+
+    {
+        editando && (
+
+            <div className="card p-4">
+
+                <h3>
+                    Editar Persona
+                </h3>
 
                 <form onSubmit={actualizar}>
 
-                    <h2>Editar Persona</h2>
-
-                    <input
+                    <select
+                        className="form-select mb-2"
                         value={tipoDoc}
                         onChange={(e) =>
-                            setTipoDoc(e.target.value)
+                            setTipoDoc(
+                                e.target.value
+                            )
                         }
-                    />
+                    >
+                        <option value="CC">
+                            Cédula de Ciudadanía
+                        </option>
+
+                        <option value="CE">
+                            Cédula de Extranjería
+                        </option>
+
+                        <option value="TI">
+                            Tarjeta de Identidad
+                        </option>
+
+                        <option value="PP">
+                            Pasaporte
+                        </option>
+
+                        <option value="NIT">
+                            NIT
+                        </option>
+
+                    </select>
 
                     <input
+                        className="form-control mb-2"
                         value={nombres}
                         onChange={(e) =>
-                            setNombres(e.target.value)
+                            setNombres(
+                                e.target.value
+                            )
                         }
+                        placeholder="Nombres"
                     />
 
                     <input
+                        className="form-control mb-2"
                         value={apellidos}
                         onChange={(e) =>
-                            setApellidos(e.target.value)
+                            setApellidos(
+                                e.target.value
+                            )
                         }
+                        placeholder="Apellidos"
                     />
 
                     <input
+                        className="form-control mb-2"
                         value={email}
                         onChange={(e) =>
-                            setEmail(e.target.value)
+                            setEmail(
+                                e.target.value
+                            )
                         }
+                        placeholder="Email"
                     />
 
                     <input
+                        className="form-control mb-2"
                         value={telefono}
                         onChange={(e) =>
-                            setTelefono(e.target.value)
+                            setTelefono(
+                                e.target.value
+                            )
                         }
+                        placeholder="Teléfono"
                     />
 
                     <input
+                        className="form-control mb-2"
                         value={usuario}
                         onChange={(e) =>
-                            setUsuario(e.target.value)
+                            setUsuario(
+                                e.target.value
+                            )
                         }
+                        placeholder="Usuario"
                     />
 
                     <input
                         type="password"
-                        placeholder="Nueva contraseña"
+                        className="form-control mb-3"
                         value={password}
                         onChange={(e) =>
-                            setPassword(e.target.value)
+                            setPassword(
+                                e.target.value
+                            )
                         }
+                        placeholder="Nueva contraseña"
                     />
 
-                    <button type="submit">
+                    <button
+                        type="submit"
+                        className="btn btn-primary"
+                    >
                         Actualizar
                     </button>
 
                 </form>
 
-            )
-        }
-    </div>
+            </div>
+
+        )
+    }
+
+</div>
+
+
 );
+
 
 
 }

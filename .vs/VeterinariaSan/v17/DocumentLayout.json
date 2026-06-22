@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\dto\\mascotadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\dto\\mascotadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|c:\\politecnico\\semestrecuatro\\ciclo8\\lenguajeprogramacionnube\\veterinariasan\\veterinariasan\\controllers\\personarolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89CAE58A-260C-406A-AA14-3531D2459467}|VeterinariaSan\\VeterinariaSan.csproj|solutionrelative:veterinariasan\\controllers\\personarolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +54,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MascotaController.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\MascotaController.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Controllers\\MascotaController.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\MascotaController.cs",
+              "RelativeToolTip": "VeterinariaSan\\Controllers\\MascotaController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T01:41:07.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MascotaDto.cs",
+              "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\MascotaDto.cs",
+              "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\MascotaDto.cs",
+              "ToolTip": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\MascotaDto.cs",
+              "RelativeToolTip": "VeterinariaSan\\Dto\\MascotaDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T01:39:15.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Administrador.cs",
               "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\Administrador.cs",
               "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\Administrador.cs",
@@ -54,12 +88,11 @@
               "RelativeToolTip": "VeterinariaSan\\Dto\\Administrador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T16:10:11.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-16T16:10:11.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VeterinarioDto.cs",
               "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\VeterinarioDto.cs",
               "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\VeterinarioDto.cs",
@@ -67,12 +100,11 @@
               "RelativeToolTip": "VeterinariaSan\\Dto\\VeterinarioDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T16:09:40.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-16T16:09:40.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ClienteDto.cs",
               "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Dto\\ClienteDto.cs",
               "RelativeDocumentMoniker": "VeterinariaSan\\Dto\\ClienteDto.cs",
@@ -80,12 +112,11 @@
               "RelativeToolTip": "VeterinariaSan\\Dto\\ClienteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T16:06:53.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-16T16:06:53.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PersonaRolController.cs",
               "DocumentMoniker": "C:\\Politecnico\\SemestreCuatro\\Ciclo8\\LenguajeProgramacionNube\\VeterinariaSan\\VeterinariaSan\\Controllers\\PersonaRolController.cs",
               "RelativeDocumentMoniker": "VeterinariaSan\\Controllers\\PersonaRolController.cs",

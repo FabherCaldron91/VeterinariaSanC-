@@ -14,6 +14,7 @@ function CrearPersona() {
         const [telefono, setTelefono] = useState("");
         const [usuario, setUsuario] = useState("");
         const [password, setPassword] = useState("");
+        const [rol, setRol] = useState ("");
 
         const guardarPersona = async (e) => {
 
@@ -44,29 +45,51 @@ function CrearPersona() {
             }
         };
 
-        return (
-            <>
-                <h1>Nueva Persona</h1>
+return (
+    <div className="container mt-4">
+    
+    <div className="card">
 
-                <form onSubmit={guardarPersona}>
+        <div className="card-header">
+            <h2>Nueva Persona</h2>
+        </div>
+
+        <div className="card-body">
+
+            <form onSubmit={guardarPersona}>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Documento
+                    </label>
 
                     <input
                         type="number"
-                        placeholder="Documento"
+                        className="form-control"
                         value={docPersona}
                         onChange={(e) =>
                             setDocPersona(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Tipo Documento
+                    </label>
+
                     <select
+                        className="form-select"
                         value={tipoDoc}
                         onChange={(e) =>
                             setTipoDoc(e.target.value)
                         }
                     >
                         <option value="">
-                            Seleccione tipo de documento
+                            Seleccione...
                         </option>
 
                         <option value="CC">
@@ -88,64 +111,167 @@ function CrearPersona() {
                         <option value="NIT">
                             NIT
                         </option>
+
                     </select>
 
+                    <br></br>
+                    <select
+                    className="from-select"
+                    value={rol}
+                    onChange={(e) =>
+                        setRol(e.target.value)
+                    }
+                    >
+                        <option
+                        value=""
+                        >
+                            selleciobne rol 
+                        </option>
+
+                        <option
+                        value="1"
+                        >
+                            Administradro
+                        </option>
+
+                        <option
+                        value="2"
+                        >
+                        Cliente 
+                        </option>
+
+                        <option
+                        value="3"
+                        >
+                            Veterinario
+                        </option>
+                    </select>
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Nombres
+                    </label>
 
                     <input
-                        placeholder="Nombres"
+                        className="form-control"
                         value={nombres}
                         onChange={(e) =>
                             setNombres(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Apellidos
+                    </label>
+
                     <input
-                        placeholder="Apellidos"
+                        className="form-control"
                         value={apellidos}
                         onChange={(e) =>
                             setApellidos(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Email
+                    </label>
+
                     <input
-                        placeholder="Email"
+                        type="email"
+                        className="form-control"
                         value={email}
                         onChange={(e) =>
                             setEmail(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Teléfono
+                    </label>
+
                     <input
-                        placeholder="Teléfono"
+                        className="form-control"
                         value={telefono}
                         onChange={(e) =>
                             setTelefono(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Usuario
+                    </label>
+
                     <input
-                        placeholder="Usuario"
+                        className="form-control"
                         value={usuario}
                         onChange={(e) =>
                             setUsuario(e.target.value)
                         }
                     />
 
+                </div>
+
+                <div className="mb-3">
+
+                    <label className="form-label">
+                        Contraseña
+                    </label>
+
                     <input
                         type="password"
-                        placeholder="Contraseña"
+                        className="form-control"
                         value={password}
                         onChange={(e) =>
                             setPassword(e.target.value)
                         }
                     />
 
-                    <button type="submit">
-                        Guardar Persona
-                    </button>
+                </div>
 
-                </form>
-    </>
+                <button
+                    type="submit"
+                    className="btn btn-success me-2"
+                >
+                    Guardar
+                </button>
+
+                <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={() =>
+                        navigate("/personas")
+                    }
+                >
+                    Cancelar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 );
 
 

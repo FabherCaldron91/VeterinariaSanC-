@@ -7,8 +7,6 @@ import {
     actualizarCita,
     eliminarCita
 } from "../services/citaService";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 function Citas() {
     const [citas, setCitas] = useState([]);
@@ -58,7 +56,6 @@ function Citas() {
 
     return (
         <form onSubmit={guardarCita}>
-            <Navbar></Navbar>
             <div>
                 <label>Fecha y Hora</label>
                 <input
@@ -108,7 +105,6 @@ function Citas() {
             <button type="submit">
                 Guardar Cita
             </button>
-            <Footer></Footer>
         </form>
 
     );

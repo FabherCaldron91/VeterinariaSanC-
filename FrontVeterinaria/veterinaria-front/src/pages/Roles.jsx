@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
 import {
     obtenerPersonaRoles,
     crearPersonaRol,
     eliminarPersonaRol
 } from "../services/personaRolService";
 
-import {
-    obtenerPersonas
-} from "../services/personaService";
+import { obtenerPersonas } from "../services/personaService";
 
 function PersonaRoles() {
 

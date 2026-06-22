@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-
 import {
 obtenerCitas,
 crearCita,
 actualizarCita,
 eliminarCita
 } from "../services/citaService";
-
 import { obtenerMascota } from "../services/mascotaServices";
 import { obtenerVeterinario} from "../services/personaRolService"
 
@@ -119,7 +116,6 @@ function CitasDos() {
 
         return (
             <>
-                <Navbar />
                 <h1>Gestión de Citas</h1>
                 <form onSubmit={guardarCita}>
                     <input
