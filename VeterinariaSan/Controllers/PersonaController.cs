@@ -64,11 +64,17 @@ namespace VeterinariaSan.Controllers
         [HttpPost("Crear")]
         public async Task<IActionResult> CrearPersona(PersonaCreateDto dto)
         {
-            var existe = await _context.Personas
-                .AnyAsync(p => p.DocPersona == dto.DocPersona);
+            if (dto == null)
+                return BadRequest();
 
-            if (existe)
+            if (await _context.Personas.AnyAsync(p => p.DocPersona == dto.DocPersona))
                 return BadRequest("Persona ya registrada.");
+
+            if (await _context.Personas.AnyAsync(p => p.Usuario == dto.Usuario))
+                return BadRequest("Persona ya registrada. ");
+
+            if (await _context.Personas.AnyAsync(p => p.Email == dto.Email))
+                return BadRequest("Persona ya registrada. ");
 
             var persona = new Persona
             {
@@ -116,7 +122,11 @@ namespace VeterinariaSan.Controllers
             persona.Email = dto.Email;
             persona.Telefono = dto.Telefono;
             persona.Usuario = dto.Usuario;
-            persona.Password = dto.Password;
+
+            if (!string.IsNullOrWhiteSpace(dto.Password))
+            {
+                persona.Password = dto.Password;
+            }
 
             await _context.SaveChangesAsync();
 

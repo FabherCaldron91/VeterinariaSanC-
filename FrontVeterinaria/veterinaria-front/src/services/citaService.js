@@ -6,7 +6,7 @@ export const obtenerCitas = () => {
 };
 
 export const crearCita = (cita) => {
-    return api.get("/Cita/crear", cita);
+    return api.post("/Cita/crear", cita);
 };
 
 export const actualizarCita = async (idCita, cita) => {

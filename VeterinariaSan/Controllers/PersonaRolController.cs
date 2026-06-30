@@ -37,6 +37,22 @@ namespace VeterinariaSan.Controllers
             return Ok(personaRoles);
         }
 
+        [HttpGet("Persona/{docPersona}")]
+        public async Task<IActionResult> ObtenerRolesPersona(int docPersona)
+        {
+            var roles = await _context.PersonaRols
+                .Where(pr => pr.PersonaDocPersona == docPersona)
+                .Select(pr => new
+                {
+                    pr.IdPersonaRol,
+                    pr.RolIdRol,
+                    Rol = pr.RolIdRolNavigation.NombreRol
+                })
+                .ToListAsync();
+
+            return Ok(roles);
+        }
+
         [HttpGet("Clientes")]
         public async Task<IActionResult> ObtenerClientes()
         {

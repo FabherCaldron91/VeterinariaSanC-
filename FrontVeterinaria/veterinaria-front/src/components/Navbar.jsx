@@ -1,10 +1,22 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import {useAuth} from "../context/AuthContext"
+import { Modulos } from "../config/permiso";
 
 function Navbar() {
+    const navigate = useNavigate()
+    const {autenticado, usuario, tienePermiso, cerrarSesion} = useAuth()
+
+    const salir = () => {
+        cerrarSesion()
+        navigate("/login")
+    }
+
+    const nombreCorto = usuario?.nombres || usuario?.usuario || "Usuario"
+
     return(
         <header className="vet-navbar">
             <nav 
-            class="navbar nav-expand-lg" data-bs-theme="white"
+            className="navbar nav-expand-lg" data-bs-theme="white"
             >
                 <div 
                 className="container"
@@ -40,65 +52,84 @@ function Navbar() {
                         <ul
                         className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1"
                         >
-                            <li
-                            className="nav-item"
-                            >
+                            <li className="nav-item">
                                 <NavLink 
                                 className="nav-link vet-nav-link" to="/"
                                 >
                                     Inicio
                                 </NavLink>
                             </li>
-                            <li
-                            className="navitem">
-                                <NavLink
-                                className="nav-link vet-nav-link" to="/personas"
+
+                            {tienePermiso(Modulos.PERSONAS) &&(
+                                <li
+                                className="navitem">
+                                    <NavLink
+                                    className="nav-link vet-nav-link" to="/personas"
+                                    >
+                                        Personas
+                                    </NavLink>
+                                </li>
+                            )}
+                            {tienePermiso(Modulos.MASCOTAS) &&(
+                                <li
+                                className="navitem"
                                 >
-                                    Personas
+                                    <NavLink
+                                    className="nav-link vet-nav-link" to="/mascotas"
+                                    >
+                                        Mascotas
+                                    </NavLink>
+                                </li>
+                            )}
+                            {tienePermiso(Modulos.CITAS) && (
+                                <li
+                                className="nav-item"
+                                >
+                                    <NavLink
+                                    className="nav-link vet-nav-link" to="/citasdos"
+                                    >
+                                        Citas
+                                    </NavLink>
+                                </li>
+                            )}
+                            {tienePermiso(Modulos.ROLES) && (
+                                <li
+                                className="nav-item"
+                                >
+                                    <NavLink
+                                    className="nav-link vet-nav-link" to="/rol"
+                                    >
+                                        Roles
+                                    </NavLink>
+                                </li>
+                            )}
+                            {autenticado ? (
+                                <>
+                                <li className="nav-item">
+                                    <span className="nav-link vet-nav-usuario" title={nombreCorto}>
+                                        Hola, {nombreCorto}
+                                    </span>
+                                </li>
+                                <li className="nav-item ms-lg-2">
+                                    <button type="button" className="nav-link
+                                    vet-nav-cta border-0" onClick={salir}>
+                                        Cerrar sesion.
+                                    </button>
+                                </li>
+                                </>
+                            ) : (
+                            <li className="nav-item ms-lg-2">
+                                <NavLink className="nav-link vet-nav-cta" to="/login">
+                                    Iniciar sesion
                                 </NavLink>
                             </li>
-                            <li
-                            className="navitem"
-                            >
-                                <NavLink
-                                className="nav-link vet-nav-link" to="/mascotas"
-                                >
-                                    Mascotas
-                                </NavLink>
-                            </li>
-                            <li
-                            className="nav-item"
-                            >
-                                <NavLink
-                                className="nav-link vet-nav-link" to="/citasdos"
-                                >
-                                    Citas
-                                </NavLink>
-                            </li>
-                            <li
-                            className="nav-item"
-                            >
-                                <NavLink
-                                className="nav-link vet-nav-link" to="/rol"
-                                >
-                                    Roles
-                                </NavLink>
-                            </li>
-                            <li
-                            className="nav-item ms-lg-2"
-                            >
-                                <Link
-                                className="nav-link vet-nav-cta" to="/citasdos"
-                                >
-                                    Agendar Cita
-                                </Link>
-                            </li>
+                            )}
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-    );
+    )
 }
 
 export default Navbar

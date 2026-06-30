@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Cita": {
       "get": {
         "tags": [
@@ -390,6 +421,52 @@
         }
       }
     },
+    "/api/Mascota/{id}": {
+      "get": {
+        "tags": [
+          "Mascota"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mascota/Cliente/{docPersona}": {
+      "get": {
+        "tags": [
+          "Mascota"
+        ],
+        "parameters": [
+          {
+            "name": "docPersona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Mascota/Listar/{nombreMascota}": {
       "get": {
         "tags": [
@@ -643,6 +720,29 @@
       "get": {
         "tags": [
           "PersonaRol"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonaRol/Persona/{docPersona}": {
+      "get": {
+        "tags": [
+          "PersonaRol"
+        ],
+        "parameters": [
+          {
+            "name": "docPersona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -985,6 +1085,20 @@
         },
         "additionalProperties": false
       },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "MascotaCreateDto": {
         "type": "object",
         "properties": {
@@ -1029,6 +1143,11 @@
           "fechaNacimiento": {
             "type": "string",
             "format": "date-time"
+          },
+          "dueño": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false

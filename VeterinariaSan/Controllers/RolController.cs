@@ -63,7 +63,7 @@ namespace VeterinariaSan.Controllers
 
             var rol = new Rol
             {
-                NombreRol = dto.NombreRol
+                NombreRol = dto.NombreRol.ToUpper()
             };
 
             _context.Rols.Add(rol);

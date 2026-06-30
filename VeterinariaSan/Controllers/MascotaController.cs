@@ -30,10 +30,60 @@ namespace VeterinariaSan.Controllers
                     Especie = m.Especie,
                     Raza = m.Raza,
                     FechaNacimiento = m.FechaNacimiento ?? DateTime.MinValue,
-                    DueñoNombre = m.DueñoNavigation.Nombres
+                  
+                    Dueño = m.Dueño,
+                    DueñoNombre = m.DueñoNavigation.Nombres + " " +
+                                   m.DueñoNavigation.Apellidos
+
                 })
                 .ToListAsync();
             return Ok(mascota);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> BuscarMascota(int id)
+        {
+            var mascota = await _context.Mascota
+                .Where(m => m.IdMascota == id)
+                .Select(m => new MascotaResponseDto
+                {
+                    IdMascota = m.IdMascota,
+                    NombreMascota = m.NombreMascota,
+                    Especie = m.Especie,
+                    Raza = m.Raza,
+                    FechaNacimiento = m.FechaNacimiento ?? DateTime.MinValue,
+
+                    DueñoNombre = m.DueñoNavigation.Nombres + " " +
+                                  m.DueñoNavigation.Apellidos
+                })
+                .FirstOrDefaultAsync();
+
+            if (mascota == null)
+                return NotFound();
+
+            return Ok(mascota);
+        }
+
+        [HttpGet("Cliente/{docPersona}")]
+        public async Task<IActionResult> ObtenerMascotasCliente(int docPersona)
+        {
+            var mascotas = await _context.Mascota
+                .Where(m => m.Dueño == docPersona)
+                .Select(m => new MascotaResponseDto
+                {
+                    IdMascota = m.IdMascota,
+                    NombreMascota = m.NombreMascota,
+                    Especie = m.Especie,
+                    Raza = m.Raza,
+                    FechaNacimiento = m.FechaNacimiento ?? DateTime.MinValue,
+
+                    Dueño = m.Dueño,
+                    DueñoNombre = m.DueñoNavigation.Nombres + " " +
+                                  m.DueñoNavigation.Apellidos
+                })
+                .ToListAsync();
+
+            return Ok(mascotas);
         }
 
         [HttpGet("Listar/{nombreMascota}")]
@@ -108,6 +158,7 @@ namespace VeterinariaSan.Controllers
             mascota.Especie = dto.Especie;
             mascota.Raza = dto.Raza;
             mascota.FechaNacimiento = dto.FechaNacimiento;
+            mascota.Dueño = dto.Dueño;
 
             await _context.SaveChangesAsync();
 

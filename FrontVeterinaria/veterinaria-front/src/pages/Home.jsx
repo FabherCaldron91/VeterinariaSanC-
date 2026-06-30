@@ -11,12 +11,14 @@ function Home(){
 
     return(
         <>
+        <Navbar />
         <Hero />
         <Nosotros />
         <Servicios />
         <Estadisticas />
         <Galeria/>
         <Contactos />
+        <Footer />
         </>
     );
 }

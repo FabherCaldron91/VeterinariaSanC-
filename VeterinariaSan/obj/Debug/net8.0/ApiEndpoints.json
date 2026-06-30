@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "VeterinariaSan.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "VeterinariaSan.Dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VeterinariaSan.Controllers.CitaController",
     "Method": "ListarCitas",
     "RelativePath": "api/Cita",
@@ -243,6 +259,22 @@
   },
   {
     "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "BuscarMascota",
+    "RelativePath": "api/Mascota/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
     "Method": "ActualizarMascota",
     "RelativePath": "api/Mascota/Actualizar/{IdMascota}",
     "HttpMethod": "PUT",
@@ -257,6 +289,22 @@
       {
         "Name": "dto",
         "Type": "VeterinariaSan.Dto.MascotaUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.MascotaController",
+    "Method": "ObtenerMascotasCliente",
+    "RelativePath": "api/Mascota/Cliente/{docPersona}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docPersona",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -445,6 +493,22 @@
     "Parameters": [
       {
         "Name": "IdPersonaRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VeterinariaSan.Controllers.PersonaRolController",
+    "Method": "ObtenerRolesPersona",
+    "RelativePath": "api/PersonaRol/Persona/{docPersona}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docPersona",
         "Type": "System.Int32",
         "IsRequired": true
       }

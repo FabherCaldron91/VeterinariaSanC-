@@ -10,7 +10,7 @@ function Nosotros() {
                 className="row aling-items-center g-5"
                 >
                     <div className="col-lg-6">
-                        <img src="" alt="Clinica" 
+                        <img src="/Imagenes/Veterinarios.png" alt="Veterinarios" 
                         className="img-fluid rounded-4 shadow-sm"
                         />
                     </div>

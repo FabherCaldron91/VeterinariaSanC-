@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import {
 obtenerPersonas,
 actualizarPersona,
@@ -137,9 +138,7 @@ const eliminar = async (
 
     }
 };
-
 const limpiar = () => {
-
     setDocPersona("");
     setTipoDoc("");
     setNombres("");
@@ -148,20 +147,15 @@ const limpiar = () => {
     setTelefono("");
     setUsuario("");
     setPassword("");
-
     setEditando(false);
 };
 
 return (
-
     <div className="container mt-4">
-
         <div className="d-flex justify-content-between mb-3">
-
             <h1>
                 Gestión Personas
             </h1>
-
             <button
                 className="btn btn-success"
                 onClick={() =>
@@ -172,13 +166,9 @@ return (
             >
                 Nueva Persona
             </button>
-
         </div>
-
         <table className="table table-striped table-hover">
-
             <thead>
-
                 <tr>
                     <th>Documento</th>
                     <th>Nombre</th>
@@ -188,53 +178,42 @@ return (
                     <th>Roles</th>
                     <th>Acciones</th>
                 </tr>
-
             </thead>
-
             <tbody>
-
                 {
                     personas.map(
                         (persona) => (
-
                         <tr
                             key={
                                 persona.docPersona
                             }
                         >
-
                             <td>
                                 {
                                     persona.docPersona
                                 }
                             </td>
-
                             <td>
                                 {
                                     persona.nombres
                                 }
                             </td>
-
                             <td>
                                 {
                                     persona.apellidos
                                 }
                             </td>
-
                             <td>
                                 {
                                     persona.email
                                 }
                             </td>
-
                             <td>
                                 {
                                     persona.usuario
                                 }
                             </td>
-
                             <td>
-
                                 <button
                                     type="button"
                                     className="btn btn-outline-dark btn-sm"
@@ -246,11 +225,8 @@ return (
                                 >
                                     Roles
                                 </button>
-
                             </td>
-
                             <td>
-
                                 <button
                                     type="button"
                                     className="btn btn-outline-success btn-sm me-2"
@@ -262,7 +238,6 @@ return (
                                 >
                                     Editar
                                 </button>
-
                                 <button
                                     type="button"
                                     className="btn btn-outline-danger btn-sm"
@@ -274,31 +249,23 @@ return (
                                 >
                                     Eliminar
                                 </button>
-
                             </td>
-
                         </tr>
                     ))
                 }
-
             </tbody>
-
         </table>
-
         {
             editando && (
-
                 <form
                     onSubmit={
                         actualizar
                     }
                     className="card p-3 mt-4"
                 >
-
                     <h3>
                         Editar Persona
                     </h3>
-
                     <input
                         className="form-control mb-2"
                         value={tipoDoc}
@@ -308,7 +275,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         className="form-control mb-2"
                         value={nombres}
@@ -318,7 +284,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         className="form-control mb-2"
                         value={apellidos}
@@ -328,7 +293,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         className="form-control mb-2"
                         value={email}
@@ -338,7 +302,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         className="form-control mb-2"
                         value={telefono}
@@ -348,7 +311,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         className="form-control mb-2"
                         value={usuario}
@@ -358,7 +320,6 @@ return (
                             )
                         }
                     />
-
                     <input
                         type="password"
                         className="form-control mb-2"
@@ -370,19 +331,15 @@ return (
                             )
                         }
                     />
-
                     <button
                         type="submit"
                         className="btn btn-primary"
                     >
                         Actualizar
                     </button>
-
                 </form>
-
             )
         }
-
     </div>
 );
 

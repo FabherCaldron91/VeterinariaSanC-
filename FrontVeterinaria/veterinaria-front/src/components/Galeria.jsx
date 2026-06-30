@@ -1,9 +1,9 @@
 const fotos = [
-    {src:"/Imagenas/Ganjha.jpeg", alt: "Aqui van fotos"},
-    {src:"/Imagenas/Minie.jpeg", alt: "Aqui van fotos"},
-    {src:"/Imagenas/Luci.jpeg", alt: "Aqui van fotos"},
-    {src:"/Imagenas/GanjhaDos.jpeg", alt: "Aqui van fotos"},
-    {src:"/Imagenas/MinieDos.jpeg", alt: "Aqui van fotos"},
+    {src:"/Imagenes/Ganjha.jpeg", alt: "Aqui van fotos"},
+    {src:"/Imagenes/Minie.jpeg", alt: "Aqui van fotos"},
+    {src:"/Imagenes/Luci.jpeg", alt: "Aqui van fotos"},
+    {src:"/Imagenes/GanjhaDos.jpeg", alt: "Aqui van fotos"},
+    {src:"/Imagenes/MinieDos.jpeg", alt: "Aqui van fotos"},
 ]
 
 function Galeria() {
